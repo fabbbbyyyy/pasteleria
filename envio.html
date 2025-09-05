@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Envío</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img id="logo" src="Imagen1.png" alt="logo">
+    </a>
+  </div>
+  <div class="Links">
+    <nav>
+      <a href="">Catalogo</a>
+      <a href="">Recomendaciones</a>
+      <a href="">Historia</a>
+      <a href="">Comunidad</a>
+
+
+    </nav>
+  </div>
+  <div id="user">
+    <a href="">
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+        </svg>Perfil
+      </button>
+    </a>
+  </div>
+</header>
+<div id="buttons">
+  <a href="carrito.html">
+    <button>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+      </svg>Carrito
+    </button>
+  </a>
+  <a href="pedido.html">
+    <button>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart" viewBox="0 0 16 16">
+        <path d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982"/>
+        <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zm0 1H7.5v3h-6zM8.5 4V1h3.75l2.25 3zM15 5v10H1V5z"/>
+      </svg>Pedidos
+    </button>
+  </a>
+
+</div>
+<!-- Sección Gestión de Envío -->
+<main id="envio">
+  <h1>Gestión de Envío</h1>
+
+  <!-- Seguimiento en tiempo real -->
+  <div class="tracking">
+    <h2>Estado del envío</h2>
+    <div class="progress-bar">
+      <div class="progress" style="width: 65%;">En camino (65%)</div>
+    </div>
+    <p>📍 Última ubicación: Centro de distribución Santiago</p>
+    <p>🚚 Próxima parada: Dirección del cliente</p>
+  </div>
+
+  <!-- Selección de fecha -->
+  <div class="delivery-preference">
+    <h2>Selecciona tu fecha de entrega preferida</h2>
+    <input type="date" id="fecha-entrega">
+    <button class="guardar-fecha">Guardar Preferencia</button>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div id="foot">
+    <div id="copy">
+      <p>Copyright 2025 Design by
+        <span>Rena-lillo labs</span>
+      </p>
+    </div>
+    <div id="priv">
+      <p>Privacy Policy</p>
+      <p>Terms & Services</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
