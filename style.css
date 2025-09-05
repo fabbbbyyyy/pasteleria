@@ -20,7 +20,7 @@ body {
 header{
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to bottom, #f5d2a4 73%, #FFC0CB);
+    background: linear-gradient(to bottom, #F8E8D8 73%, #F4E4E1);
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 1rem;
@@ -29,14 +29,14 @@ header{
 
 h1{
     text-decoration: none;
-    color: #5D4037;
+    color: #8B4B3B;
     font-family: "Pacifico", cursive;
     font-size: 1.7rem;
 }
 
 #contenido>p{
     font-family: "Lato", sans-serif;
-        color: #5D4037;
+    color: #6B453C;
 }
 
 #logo{
@@ -50,21 +50,24 @@ h1{
     text-decoration: none;
 }
 
-.bi-person{
-    
-}
-
 #user>a>button{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 98px;
     height: 45px;
-    background-color: #5D4037;
-    color: #f5d2a4;
+    background-color: #A67C6A;
+    color: #F8E8D8;
     border-radius: 100px;
     column-gap: .25rem;
+    transition: all 0.3s ease;
 }
+
+#user>a>button:hover{
+    background-color: #8B4B3B;
+    transform: translateY(-2px);
+}
+
 .Links{
     display: flex;
     justify-content: center;
@@ -72,13 +75,13 @@ h1{
 }
 .Links>nav>a{
     text-decoration: none;
-    color: #5D4037;
+    color: #8B4B3B;
     font-family: "Pacifico", cursive;
     font-size: 1.7rem;
 }
 
 .Links>nav>a:hover{
-    color: #8B4513;
+    color: #D4A574;
 }
 
 #buttons{
@@ -86,7 +89,7 @@ h1{
     justify-content: flex-end;
     gap: 1rem;
     padding-right: 30px;
-    background-color: #FFC0CB ;
+    background-color: #F4E4E1;
 }
 
 #buttons>a{
@@ -99,11 +102,19 @@ h1{
     justify-content: center;
     width: auto;
     height: 30px;
-    background-color: #5D4037;
-    color: #f5d2a4;
+    background-color: #A67C6A;
+    color: #F8E8D8;
     border-radius: 100px;
     column-gap: .25rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
 }
+
+#buttons>a>button:hover{
+    background-color: #8B4B3B;
+    transform: translateY(-2px);
+}
+
 #user{
     display: flex;
     justify-content: center;
@@ -121,7 +132,7 @@ button{
 #centro{
     display: flex;
     flex-direction: column;
-    background-color: #FFC0CB;
+    background-color: #F4E4E1;
     padding: 3rem;
     justify-content: center;
     flex: 1 0 auto;
@@ -137,8 +148,9 @@ button{
     padding: 4rem;
     max-width: 1600px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    background-color: #f5d2a4;
+    box-shadow: 0 4px 15px rgba(139, 75, 59, 0.15);
+    background-color: #F8E8D8;
+    border: 1px solid #E8D5C4;
 }
 
 #contenido>h1{
@@ -146,7 +158,7 @@ button{
 }
 
 footer{
-    background: linear-gradient(to top, #f5d2a4 73%, #FFC0CB);
+    background: linear-gradient(to top, #F8E8D8 73%, #F4E4E1);
     flex-shrink: 0;
     width: 100%;
 }
@@ -157,25 +169,30 @@ footer{
     padding-top: 6rem;
     padding-bottom: 2rem;
     font-family: "Pacifico", cursive !important;
-    color: #5D4037;
+    color: #8B4B3B;
 }
 
+#foot a {
+    color: #A67C6A;
+    text-decoration: none;
+}
 
-/* ===============================
-    Carrito
-   =============================== */
+#foot a:hover {
+    color: #D4A574;
+}
+
 #carro{
     display: flex;
     flex-direction: column;
     text-align: justify;
     padding: 4rem;
-    background-color: #FFC0CB;
+    background-color: #F4E4E1;
 }
 
 #cart h1 {
   font-family: "Pacifico", cursive;
   font-size: 2.5rem;
-  color: #5D4037;
+  color: #8B4B3B;
   margin-bottom: 2rem;
 }
 
@@ -189,10 +206,11 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f5d2a4;
+  background: #F8E8D8;
   padding: 1rem;
   border-radius: 20px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 12px rgba(139, 75, 59, 0.12);
+  border: 1px solid #E8D5C4;
 }
 
 .item img {
@@ -207,7 +225,7 @@ footer{
   margin-left: 1rem;
   text-align: left;
   font-family: "Lato", sans-serif;
-  color: #5D4037;
+  color: #6B453C;
 }
 
 .item .actions {
@@ -220,29 +238,33 @@ footer{
   width: 50px;
   text-align: center;
   border-radius: 8px;
-  border: 1px solid #5D4037;
+  border: 1px solid #A67C6A;
   padding: .3rem;
+  background-color: #F8E8D8;
+  color: #6B453C;
 }
 
 .item .actions .remove {
-  background: #8B0000;
-  color: white;
+  background: #D4A574;
+  color: #6B453C;
   padding: .5rem 1rem;
   border-radius: 20px;
   cursor: pointer;
   border: none;
   font-family: "Lato", sans-serif;
+  transition: all 0.3s ease;
 }
 
 .item .actions .remove:hover {
-  background: #a50000;
+  background: #C19660;
+  transform: translateY(-1px);
 }
 
 .cart-total {
   margin-top: 2rem;
   text-align: right;
   font-family: "Lato", sans-serif;
-  color: #5D4037;
+  color: #6B453C;
 }
 
 .cart-total h2 {
@@ -250,22 +272,73 @@ footer{
 }
 
 .cart-total .checkout {
-  background: #5D4037;
-  color: #f5d2a4;
+  background: #A67C6A;
+  color: #F8E8D8;
   padding: .7rem 1.5rem;
   border-radius: 30px;
   cursor: pointer;
   font-size: 1.1rem;
   font-family: "Lato", sans-serif;
+  transition: all 0.3s ease;
 }
 
 .cart-total .checkout:hover {
-  background: #8B4513;
+  background: #8B4B3B;
+  transform: translateY(-2px);
 }
 
-/* ===============================
-   Seguimiento de Pedidos
-   =============================== */
+#catalogo{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 18vw;
+    height: 18vw;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(139, 75, 59, 0.15);
+    background-color: #F8E8D8;
+    border: 1px solid #E8D5C4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(139, 75, 59, 0.2);
+}
+
+.card>a:hover{
+    color: #D4A574;
+}
+
+.card>a{
+    text-decoration: none;
+    color: #8B4B3B;
+    padding: 1rem;
+    font-size: .9rem;
+    font-size: 2rem;
+}
+
+.card>img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#centro>h1{
+    font-size: 3rem;
+}
+
 #seguimiento {
   flex: 1;
   padding: 3rem 5%;
@@ -293,7 +366,6 @@ footer{
   color: #5D4037;
 }
 
-/* Línea de progreso */
 .order-tracking {
   display: flex;
   justify-content: space-between;
