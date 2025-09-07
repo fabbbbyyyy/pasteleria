@@ -42,7 +42,6 @@ h1{
     height: 125px;
     width: 125px;
 }
-
 #user>a{
     display: flex;
     flex-direction: column;
@@ -375,6 +374,10 @@ footer{
     color: #D4A574;
 }
 
+
+/* ===============================
+   Carrito
+   =============================== */
 #carro{
     display: flex;
     flex-direction: column;
@@ -536,6 +539,9 @@ footer{
     padding-left: 3rem;
 }
 
+/* ===============================
+   Seguimiento
+   =============================== */
 #seguimiento {
   flex: 1;
   padding: 3rem 5%;
