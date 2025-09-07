@@ -16,7 +16,6 @@ body {
     min-height: 100vh;
 }
 
-
 header{
     display: flex;
     justify-content: space-between;
@@ -31,7 +30,7 @@ h1{
     text-decoration: none;
     color: #8B4B3B;
     font-family: "Pacifico", cursive;
-    font-size: 3rem;
+    font-size: 1.7rem;
 }
 
 #contenido>p{
@@ -42,8 +41,8 @@ h1{
 #logo{
     height: 125px;
     width: 125px;
-
 }
+
 #user>a{
     display: flex;
     flex-direction: column;
@@ -73,6 +72,7 @@ h1{
     justify-content: center;
     align-items: center;
 }
+
 .Links>nav>a{
     text-decoration: none;
     color: #8B4B3B;
@@ -119,6 +119,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    column-gap: 1rem;
 }
 
 button{
@@ -155,8 +156,201 @@ button{
 
 #contenido>h1{
     margin-bottom: 2rem;
+    text-align: center;
 }
 
+/* Nuevos estilos para la página principal */
+
+/* Hero Section */
+.hero-image {
+    margin: 2rem 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Botones CTA */
+.cta-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.btn-cta {
+    background-color: #8B4B3B;
+    color: #F8E8D8;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #6B3A2A;
+    transform: translateY(-2px);
+}
+
+/* Historia y Logros */
+#historia-logros {
+    display: flex;
+    gap: 3rem;
+    margin: 4rem 0;
+    align-items: center;
+}
+
+.historia-imagen {
+    flex: 1;
+}
+
+.historia-imagen img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.historia-contenido {
+    flex: 1;
+    padding: 2rem;
+    background-color: #F8E8D8;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(139, 75, 59, 0.15);
+}
+
+.historia-contenido h2 {
+    font-family: "Pacifico", cursive;
+    color: #8B4B3B;
+    margin-bottom: 1rem;
+}
+
+.historia-contenido p {
+    font-family: "Lato", sans-serif;
+    color: #6B453C;
+    line-height: 1.6;
+}
+
+/* Títulos de sección */
+.seccion-titulo {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #8B4B3B;
+    font-size: 2.5rem;
+    margin: 3rem 0;
+}
+
+/* Servicios */
+#servicios {
+    margin: 4rem 0;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.servicio-card {
+    background-color: #F8E8D8;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(139, 75, 59, 0.15);
+}
+
+.servicio-card svg {
+    margin-bottom: 1rem;
+}
+
+.servicio-card h3 {
+    font-family: 'Pacifico', cursive;
+    color: #8B4B3B;
+    margin-bottom: 1rem;
+}
+
+.servicio-card p {
+    font-family: 'Lato', sans-serif;
+    color: #6B453C;
+}
+
+/* Testimonios */
+#testimonios {
+    margin: 4rem 0;
+    background-color: #F8E8D8;
+    padding: 3rem;
+    border-radius: 15px;
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonio-card {
+    background-color: #F4E4E1;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #A67C6A;
+}
+
+.testimonio-card p {
+    font-family: 'Lato', sans-serif;
+    color: #6B453C;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonio-card strong {
+    color: #8B4B3B;
+}
+
+/* Call to Action Final */
+#cta-final {
+    text-align: center;
+    margin: 4rem 0;
+    padding: 3rem;
+    background: linear-gradient(45deg, #A67C6A, #8B4B3B);
+    border-radius: 15px;
+    color: #F8E8D8;
+}
+
+#cta-final h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#cta-final p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-final {
+    background-color: #F8E8D8;
+    color: #8B4B3B;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-final:hover {
+    background-color: #F0D8C8;
+    transform: translateY(-2px);
+}
+
+/* Estilos existentes del footer y demás */
 footer{
     background: linear-gradient(to top, #F8E8D8 73%, #F4E4E1);
     flex-shrink: 0;
@@ -294,6 +488,7 @@ footer{
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 2rem 0;
 }
 
 .card{
@@ -344,7 +539,7 @@ footer{
 #seguimiento {
   flex: 1;
   padding: 3rem 5%;
-  background: #FFC0CB;
+  background: #F4E4E1;
   text-align: center;
 }
 
@@ -352,11 +547,11 @@ footer{
   font-family: "Pacifico", cursive;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #5D4037;
+  color: #8B4B3B;
 }
 
 .order-info {
-  background: #f5d2a4;
+  background: #F8E8D8;
   padding: 1.5rem;
   border-radius: 15px;
   margin-bottom: 2rem;
@@ -365,7 +560,7 @@ footer{
   max-width: 500px;
   margin-inline: auto;
   font-family: "Lato", sans-serif;
-  color: #5D4037;
+  color: #8B4B3B;
 }
 
 .order-tracking {
@@ -383,7 +578,7 @@ footer{
   left: 10%;
   right: 10%;
   height: 4px;
-  background: #5D4037;
+  background: #8B4B3B;
   z-index: 0;
 }
 
@@ -396,21 +591,21 @@ footer{
 
 .step span {
   display: inline-block;
-  background: #f5d2a4;
-  border: 2px solid #5D4037;
+  background: #F8E8D8;
+  border: 2px solid #8B4B3B;
   border-radius: 50%;
   padding: .6rem 1rem;
   font-weight: bold;
 }
 
 .step.completed span {
-  background: #5D4037;
-  color: #f5d2a4;
+  background: #8B4B3B;
+  color: #F8E8D8;
 }
 
 .step.active span {
-  background: #FFD700;
-  color: #5D4037;
+  background: #F4E4E1;
+  color: #8B4B3B;
 }
 
 .step p {
@@ -420,15 +615,15 @@ footer{
 
 /* Notificación */
 .notification {
-  background: #f5d2a4;
+  background: #F8E8D8;
   padding: 1rem;
-  border-left: 5px solid #5D4037;
+  border-left: 5px solid #8B4B3B;
   border-radius: 8px;
   font-size: 1rem;
   max-width: 600px;
   margin: 0 auto;
   font-family: "Lato", sans-serif;
-  color: #5D4037;
+  color: #8B4B3B;
 }
 
 /* ===============================
@@ -437,7 +632,7 @@ footer{
 #envio {
   flex: 1;
   padding: 3rem 5%;
-  background: #FFC0CB;
+  background: #F4E4E1;
   text-align: center;
   font-family: "Lato", sans-serif;
   color: #5D4037;
@@ -451,7 +646,7 @@ footer{
 
 /* Seguimiento */
 .tracking {
-  background: #f5d2a4;
+  background: #F8E8D8;
   padding: 1.5rem;
   border-radius: 15px;
   margin-bottom: 2.5rem;
@@ -472,8 +667,8 @@ footer{
 }
 
 .progress {
-  background: #5D4037;
-  color: #f5d2a4;
+  background: #8B4B3B;
+  color: #F8E8D8;
   height: 100%;
   text-align: center;
   font-weight: bold;
@@ -482,7 +677,7 @@ footer{
 
 /* Preferencia de entrega */
 .delivery-preference {
-  background: #f5d2a4;
+  background: #F8E8D8;
   padding: 1.5rem;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -498,15 +693,15 @@ footer{
 
 .delivery-preference input[type="date"] {
   padding: .5rem 1rem;
-  border: 2px solid #5D4037;
+  border: 2px solid #8B4B3B;
   border-radius: 10px;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
 }
 
 .guardar-fecha {
-  background: #5D4037;
-  color: #f5d2a4;
+  background: #8B4B3B;
+  color: #F8E8D8;
   padding: .7rem 1.5rem;
   border-radius: 30px;
   cursor: pointer;
@@ -518,11 +713,11 @@ footer{
 .guardar-fecha:hover {
   background: #8B4513;
 }
-#envio>.delivery-preference>#fecha-entrega{
-  background-color: #5D4037;
-  color:#f5d2a4
-}
 
+#envio>.delivery-preference>#fecha-entrega{
+  background-color: #8B4B3B;
+  color:#F8E8D8
+}
 
 /* ===============================
    Registro
@@ -530,10 +725,10 @@ footer{
 #registro {
   flex: 1;
   padding: 3rem 5%;
-  background: #FFC0CB;
+  background: #F4E4E1;
   text-align: center;
   font-family: "Lato", sans-serif;
-  color: #5D4037;
+  color: #8B4B3B;
 }
 
 #registro h1 {
@@ -543,7 +738,7 @@ footer{
 }
 
 .form-registro {
-  background: #f5d2a4;
+  background: #F8E8D8;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -556,15 +751,15 @@ footer{
 
 .form-registro input {
   padding: .7rem 1rem;
-  border: 2px solid #5D4037;
+  border: 2px solid #8B4B3B;
   border-radius: 10px;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
 }
 
 .btn-registro {
-  background: #5D4037;
-  color: #f5d2a4;
+  background: #8B4B3B;
+  color: #F8E8D8;
   padding: .8rem 1.5rem;
   border-radius: 30px;
   cursor: pointer;
@@ -584,7 +779,7 @@ footer{
 }
 
 #registro p a {
-  color: #5D4037;
+  color: #8B4B3B;
   font-weight: bold;
   text-decoration: none;
 }
@@ -599,10 +794,10 @@ footer{
 #login {
   flex: 1;
   padding: 3rem 5%;
-  background: #FFC0CB;
+  background: #F4E4E1;
   text-align: center;
   font-family: "Lato", sans-serif;
-  color: #5D4037;
+  color: #8B4B3B;
 }
 
 #login h1 {
@@ -612,7 +807,7 @@ footer{
 }
 
 .form-login {
-  background: #f5d2a4;
+  background: #F8E8D8;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -625,14 +820,14 @@ footer{
 
 .form-login input {
   padding: .7rem 1rem;
-  border: 2px solid #5D4037;
+  border: 2px solid #8B4B3B;
   border-radius: 10px;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
 }
 
 .btn-login {
-  background: #5D4037;
+  background: #8B4B3B;
   color: #f5d2a4;
   padding: .8rem 1.5rem;
   border-radius: 30px;
@@ -653,7 +848,7 @@ footer{
 }
 
 #login p a {
-  color: #5D4037;
+  color: #8B4B3B;
   font-weight: bold;
   text-decoration: none;
 }
@@ -661,6 +856,8 @@ footer{
 #login p a:hover {
   text-decoration: underline;
 }
+
+/* Estilos para productos */
 .category-description {
   font-family: "Lato", sans-serif;
   color: #5D4E42;
@@ -810,17 +1007,200 @@ footer{
   transform: translateY(-2px);
 }
 
+.cta-buttons a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(139, 75, 59, 0.3);
+}
+
+#historia-logros {
+  flex-wrap: wrap;
+}
+
+/* Media Queries para Responsividad */
 @media (max-width: 768px) {
-#productos-grid {
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  #productos-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .producto-card {
+    padding: 1rem;
+  }
+
+  .producto-imagen img {
+    height: 180px;
+  }
+
+  #historia-logros {
+    flex-direction: column;
+  }
+
+  .cta-buttons {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .cta-buttons a {
+    width: 200px;
+    text-align: center;
+  }
+
+  .card {
+    width: 80vw;
+    height: auto;
+  }
+
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #centro>h1 {
+    text-align: center;
+    padding-left: 0;
+  }
 }
 
-.producto-card {
-  padding: 1rem;
+/* ===============================
+   Perfil de Usuario
+   =============================== */
+#perfil {
+  flex: 1;
+  padding: 3rem 5%;
+  background: #F4E4E1;
+  font-family: "Lato", sans-serif;
+  color: #8B4B3B;
+  text-align: center;
 }
 
-.producto-imagen img {
-  height: 180px;
+#perfil h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
+
+.perfil-info {
+  background: #F8E8D8;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  text-align: left;
+  line-height: 1.8rem;
+}
+
+.perfil-info p {
+  margin: .5rem 0;
+  font-size: 1rem;
+}
+
+.perfil-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.perfil-actions button {
+  background: #8B4B3B;
+  color: #F8E8D8;
+  padding: .7rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  border: none;
+  transition: background .3s;
+}
+
+.perfil-actions button:hover {
+  background: #4A3B32;
+}
+
+.btn-cerrar {
+  background: #8B4B3B;
+}
+
+.btn-cerrar:hover {
+  background: #8B4B3B;
+}
+
+/* ===============================
+   Recomendaciones Personalizadas
+   =============================== */
+#recomendaciones {
+  flex: 1;
+  padding: 3rem 5%;
+  background: #F4E4E1;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #8B4B3B;
+}
+
+#recomendaciones h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#recomendaciones .intro {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.reco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.reco-item {
+  background: #F8E8D8;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.reco-item:hover {
+  transform: translateY(-5px);
+}
+
+.reco-item img {
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.reco-item h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+}
+
+.reco-item p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-agregar {
+  background: #8B4B3B;
+  color: #F8E8D8;
+  padding: .6rem 1.2rem;
+  border-radius: 25px;
+  border: none;
+  font-size: .95rem;
+  cursor: pointer;
+  transition: background .3s;
+  font-family: "Lato", sans-serif;
+}
+
+.btn-agregar:hover {
+  background: #8B4513;
 }
