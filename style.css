@@ -1210,3 +1210,898 @@ footer{
 .btn-agregar:hover {
   background: #8B4513;
 }
+
+.community-stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(139, 75, 59, 0.1);
+  min-width: 150px;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #8B4B3B;
+  font-family: "Pacifico", cursive;
+  display: block;
+}
+
+.stat-label {
+  color: #6B453C;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+/* Secciones de la comunidad */
+.community-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(139, 75, 59, 0.1);
+}
+
+.community-section h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  color: #8B4B3B;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Blog Grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-card {
+  background-color: #F8E8D8;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(139, 75, 59, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 1.5rem;
+}
+
+.blog-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: #A67C6A;
+}
+
+.blog-date {
+  font-weight: bold;
+}
+
+.blog-author {
+  font-style: italic;
+}
+
+.blog-card h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 1.4rem;
+  color: #8B4B3B;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.blog-card p {
+  color: #6B453C;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.blog-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #A67C6A;
+  color: #F8E8D8;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-family: "Lato", sans-serif;
+}
+
+/* Recetas Grid */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.recipe-card {
+  background-color: #F8E8D8;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(139, 75, 59, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.recipe-content {
+  padding: 1.5rem;
+}
+
+.recipe-content h4 {
+  font-family: "Pacifico", cursive;
+  font-size: 1.3rem;
+  color: #8B4B3B;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-author {
+  color: #A67C6A;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.recipe-difficulty {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.difficulty-level {
+  background-color: #D4A574;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+}
+
+.recipe-time {
+  color: #6B453C;
+  font-weight: bold;
+}
+
+.recipe-btn {
+  background-color: #A67C6A;
+  color: #F8E8D8;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.recipe-btn:hover {
+  background-color: #8B4B3B;
+  transform: translateY(-2px);
+}
+
+/* Sección de Apoyo */
+.support-section {
+  background: linear-gradient(135deg, #F8E8D8 0%, #F4E4E1 100%);
+}
+
+.support-content h2 {
+  margin-bottom: 3rem;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.support-item {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(139, 75, 59, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.support-item:hover {
+  transform: translateY(-5px);
+}
+
+.support-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.support-item h3 {
+  font-family: "Pacifico", cursive;
+  color: #8B4B3B;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.support-item p {
+  color: #6B453C;
+  line-height: 1.6;
+}
+
+/* Estudiante Destacado */
+.featured-student {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  background-color: #F8E8D8;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(139, 75, 59, 0.15);
+}
+
+.student-photo-container {
+  flex-shrink: 0;
+}
+
+.student-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #A67C6A;
+}
+
+.student-info-detailed {
+  flex: 1;
+}
+
+.student-info-detailed h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  color: #8B4B3B;
+  margin-bottom: 0.5rem;
+}
+
+.student-course {
+  color: #A67C6A;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.student-achievement {
+  color: #D4A574;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.student-quote {
+  color: #6B453C;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.student-specialties {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.specialty {
+  background-color: #A67C6A;
+  color: #F8E8D8;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Testimonios */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: #F8E8D8;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(139, 75, 59, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card p {
+  color: #6B453C;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.testimonial-author strong {
+  color: #8B4B3B;
+  font-family: "Pacifico", cursive;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.testimonial-author span {
+  color: #A67C6A;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design para Comunidad */
+@media (max-width: 768px) {
+  .community-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-item {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .blog-grid,
+  .recipes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .featured-student {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .community-section {
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .community-section h2 {
+    font-size: 2rem;
+  }
+  
+  .student-info-detailed h3 {
+    font-size: 1.5rem;
+  }
+  
+  .blog-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .recipe-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .support-item h3 {
+    font-size: 1.3rem;
+  }
+  
+  .recipe-difficulty {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.anniversary-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #D4A574, #A67C6A);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(139, 75, 59, 0.2);
+}
+
+.anniversary-number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #F8E8D8;
+  font-family: "Pacifico", cursive;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.anniversary-text {
+  font-size: 1.5rem;
+  color: #F8E8D8;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+}
+
+/* Secciones de Historia */
+.history-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(139, 75, 59, 0.1);
+}
+
+.history-section h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  color: #8B4B3B;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Línea de Tiempo */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #A67C6A, #D4A574);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 3rem 0;
+  width: 100%;
+}
+
+.timeline-year {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  background: #8B4B3B;
+  color: #F8E8D8;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+  font-family: "Pacifico", cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(139, 75, 59, 0.3);
+}
+
+.timeline-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #F8E8D8;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 4rem;
+  box-shadow: 0 6px 20px rgba(139, 75, 59, 0.15);
+  width: 45%;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: 55%;
+  flex-direction: row-reverse;
+}
+
+.timeline-image {
+  flex-shrink: 0;
+}
+
+.timeline-image img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(139, 75, 59, 0.2);
+}
+
+.timeline-text {
+  flex: 1;
+}
+
+.timeline-text h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  color: #8B4B3B;
+  margin-bottom: 1rem;
+}
+
+.timeline-text p {
+  color: #6B453C;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Misión y Visión */
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.mission-card,
+.vision-card {
+  background: #F8E8D8;
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(139, 75, 59, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+  transform: translateY(-5px);
+}
+
+.mv-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.mission-card h3,
+.vision-card h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  color: #8B4B3B;
+  margin-bottom: 1.5rem;
+}
+
+.mission-card p,
+.vision-card p {
+  color: #6B453C;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/* Grid de Valores */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.value-card {
+  background: #F8E8D8;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(139, 75, 59, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.value-card h4 {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  color: #8B4B3B;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  color: #6B453C;
+  line-height: 1.5;
+}
+
+/* Grid de Logros */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.achievement-card {
+  background: #F8E8D8;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(139, 75, 59, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #8B4B3B;
+  font-family: "Pacifico", cursive;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.achievement-card h4 {
+  font-family: "Pacifico", cursive;
+  font-size: 1.3rem;
+  color: #8B4B3B;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-card p {
+  color: #6B453C;
+  font-size: 0.9rem;
+}
+
+/* Sección de Fundadores */
+.founders-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.founder-card {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background: #F8E8D8;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(139, 75, 59, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-5px);
+}
+
+.founder-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.founder-photo {
+  flex-shrink: 0;
+}
+
+.founder-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #A67C6A;
+  box-shadow: 0 4px 15px rgba(139, 75, 59, 0.2);
+}
+
+.founder-info {
+  flex: 1;
+}
+
+.founder-info h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  color: #8B4B3B;
+  margin-bottom: 0.5rem;
+}
+
+.founder-title {
+  color: #A67C6A;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.founder-bio {
+  color: #6B453C;
+  line-height: 1.6;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.founder-years {
+  color: #A67C6A;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Responsive Design para Historia */
+@media (max-width: 1024px) {
+  .timeline::before {
+    left: 30px;
+  }
+  
+  .timeline-year {
+    left: 30px;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-content {
+    width: calc(100% - 80px);
+    margin-left: 80px !important;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content {
+    flex-direction: column;
+  }
+  
+  .timeline-image img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .anniversary-badge {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .anniversary-number {
+    font-size: 3rem;
+  }
+  
+  .anniversary-text {
+    font-size: 1.2rem;
+  }
+  
+  .history-section {
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .history-section h2 {
+    font-size: 2rem;
+  }
+  
+  .mission-vision {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .founder-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .founder-card:nth-child(even) {
+    flex-direction: column;
+  }
+  
+  .founder-photo img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .founder-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .timeline {
+    padding: 1rem 0;
+  }
+  
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-year {
+    left: 20px;
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+  
+  .timeline-content {
+    width: calc(100% - 60px);
+    margin-left: 60px !important;
+    padding: 1.5rem;
+  }
+  
+  .timeline-image img {
+    height: 150px;
+  }
+  
+  .timeline-text h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement-card {
+    padding: 1.5rem;
+  }
+  
+  .achievement-number {
+    font-size: 2.5rem;
+  }
+  
+  .value-card {
+    padding: 1.5rem;
+  }
+  
+  .value-icon {
+    font-size: 2.5rem;
+  }
+  
+  .mission-card,
+  .vision-card {
+    padding: 2rem;
+  }
+  
+  .mv-icon {
+    font-size: 2.5rem;
+  }
+  
+  .founders-section {
+    gap: 2rem;
+  }
+}
