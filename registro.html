@@ -39,15 +39,17 @@
 <main id="registro">
   <h1>Crear una cuenta</h1>
   <form class="form-registro" action="#" method="post">
-    <input type="text" name="nombre" placeholder="Nombre completo" required>
-    <input type="email" name="email" placeholder="Correo electrónico" required>
-    <input type="password" name="password" placeholder="Contraseña" required>
-    <input type="password" name="confirmar" placeholder="Confirmar contraseña" required>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required >
+    <input type="email" id="mail" name="email" placeholder="Correo electrónico" required >
+    <input type="password" id="pass1" name="password" placeholder="Contraseña" required >
+    <input type="password" id="pass2" name="confirmar" placeholder="Confirmar contraseña" required >
     <button type="submit" class="btn-registro">Registrarse</button>
   </form>
   <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
 </main>
+ <div id="errores">
 
+ </div>
 <!-- Footer -->
 <footer>
   <div id="foot">
@@ -62,9 +64,11 @@
     </div>
   </div>
 </footer>
+  <div id="Allerror">
+    <div id="errores"></div>
+  </div>
+  
 </body>
-<<<<<<< HEAD
+
+<script src="function.js"></script>
 </html>
-=======
-</html>
->>>>>>> dee943b3f9a201b4bdef0058c6f6043ba6ed2f74

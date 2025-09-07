@@ -2105,3 +2105,18 @@ footer{
     gap: 2rem;
   }
 }
+
+.error {
+  border: 2px solid red;
+  background-color: #ffe6e6; /* suave, no rojo fuerte */
+}
+
+#errores p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe6e6 ;
+  color: red;
+  font-size: 20px;
+
+}
